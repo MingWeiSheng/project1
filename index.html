@@ -1,73 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        h2{
-            text-align: center;
-        }
-        body{
-            font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-            color: #4f6b72;
-            background-color: rgb(253, 219, 242);
-            font-style: oblique;
-        }
-        table{
-            width: 800px;
-            height: 50px;
-        }
-        th {
-            font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-            color: #4f6b72;
-            border-right: 1px solid #C1DAD7;
-            border-bottom: 1px solid #C1DAD7;
-            border-top: 1px solid #C1DAD7;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-align: left;
-            padding: 6px 6px 6px 12px;
-            background: #CAE8EA url(images/bg_header.jpg) no-repeat;
-        }
-        td {
-            border-right: 1px solid #C1DAD7;
-            border-bottom: 1px solid #C1DAD7;
-            background: #fff;
-            padding: 6px 6px 6px 12px;
-            color: #4f6b72;
-        }
-
-
-        a{
-            text-align: center;
-            color: #c75f3e;
-            font-style:normal;
-            font-size:20px;
-            padding: 3px;
-            display: block;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
     <head>
         <title>CSHOME</title>
     </head>
     <body>
+        <div id="web_bg" style="background-image: url(background.jpg);"></div>
         <h2>CSHOME</h2>
+        <div id="left">
+            <div id="inner_left"></div>
+        </div>
+        <div id="right">hello</div>
         <p>
             Welcome to our CSHome! 
         </p>
         <p>I have provided detailed tutorial and questions for you to practice.<br />
            I really hope you can learn something in my website.<br />
            Enjoy yourselves!<br />
-        Here are some optiosn for you to choose.</p>
-        <table>
-            <tr>
-                <th><a href="#">C</a></th>
-                <th><a href="#">JAVA</a></th>
-                <th><a href="#">HTML</a></th>
-                <th><a href="#">Python</a></th>
-            </tr>
-        </table>
+            Here are some options for you to choose.
+        </p>
+        <div class="container">
+            <ol class="rounded-list"> 
+                <li><a href="1.html">JAVA</a></li> 
+                <li><a href="2.html">C</a></li> 
+                <li><a href="3.html">HTML</a></li> 
+                <li><a href="4.html">Python</a></li> 
+            </ol> 
+        </div>
         
-        
-        
-          ​
+
+       
     </body>
 </html>
