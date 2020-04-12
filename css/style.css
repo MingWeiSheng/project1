@@ -1,0 +1,217 @@
+
+h1{
+    text-align: center;
+    opacity: 1;
+    font: italic 2em Georgia, serif;
+
+}
+body{
+    text-align: left;
+    padding: 0; margin: 0; 
+}
+.paragraph{
+    font: 20px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","HeitiSC","WenQuanYi Micro Hei",sans-serif;
+    padding-left: 35%;
+    opacity: 1;
+}
+#childparagraph{
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "MicrosoftYaHei", "WenQuanYi Micro Hei", sans-serif;
+    padding-left: 250px;
+    opacity: 1;
+}
+
+#left{
+    width:100%; float:left; height:100%; 
+}
+#inner_left{
+    background: rgb(255,179,167); margin-right:100px;
+}
+#right{
+    margin:0px -100px 0 -100px; width:100px; float:left; height:100%; clear:right; background:rgb(244,121,131); opacity:0.5;
+}
+img{
+    margin-left: 250px;
+    width: 900px;
+    height: 600px;
+    
+}
+.tips{
+    margin-left:250px;
+}
+ol{
+    margin-left: 46%;
+    margin-right: 46%;
+    padding: 0;
+    counter-reset: li; /* 创建一个计数器 */
+    list-style: none; /* 清除列表默认的编码*/
+    *list-style: decimal; /* 让IE6/7具有默认的编码 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 pink;
+}
+#web_bg{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    filter:alpha(opacity=50);  
+    -moz-opacity:0.8;  
+    -khtml-opacity: 0.8;  
+    opacity: 0.7
+}
+.rounded-list a {
+    position: relative;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 2em;
+    *padding: 0.4em;/*for ie6/7*/
+    margin: 0.5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    /*CSS3属性*/
+    border-radius: 0.3em;/*制作圆角*/
+    /* transition动画效果*/
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.rounded-list a:hover {
+    background: #eee;
+}
+.rounded-list a:hover::before {
+    /*悬停时旋转编码*/
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.rounded-list a::before {
+    
+    content: counter(li);
+    counter-increment: li;
+    
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: 0.3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+   /* General Buttons */
+   button {
+     width: 100px;
+     height: 40px;
+     background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+     border: none;
+     border-radius: 5px;
+     position: absolute;
+     top:8%;
+     left:80%;
+     border-bottom: 4px solid #2b8bc6;
+     color: #fbfbfb;
+     font-weight: 600;
+     font-family: 'Open Sans', sans-serif;
+     text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+     font-size: 15px;
+     text-align: left;
+     text-indent: 5px;
+     box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+     cursor: pointer;
+   
+   /* Just for presentation */  
+     display: block;
+     margin: 0 auto;
+     margin-bottom: 20px;
+   }
+   
+   button.back {
+     text-align: right;
+     padding-right: 12px;
+     box-sizing: border-box;
+   }
+   button.back:after {
+     content: "";
+     width: 0;
+     height: 0;
+     display: block;
+     border-top: 20px solid #187dbc;
+     border-bottom: 20px solid #187dbc;
+     border-right: 16px solid transparent;
+     border-left: 20px solid #187dbc;
+     position: absolute;
+     opacity: 0.6; 
+     left: 0;
+     top: 0;
+     border-radius: 5px 0 0 5px;    
+   }
+   form{
+       margin-left: 35%;
+   }
+   
+   .animationcontainer {
+    position: relative;
+    margin-left: 46%;
+  }
+  
+  .ghost {
+    animation: float 3s ease-out infinite;
+  }
+  
+  @keyframes float {
+    50% {
+       transform: translate(0, 20px);
+    }
+  }
+  .shadowFrame {
+    width: 130px;
+    margin-top: 15px;
+  }
+  .shadow {
+    animation: shrink 3s ease-out infinite;
+    transform-origin: center center;
+  }
+  
+  @keyframes shrink {
+    0% {
+      width: 90%;
+      margin: 0 5%;
+    }
+    50% {
+      width: 60%;
+      margin: 0 18%;
+    }
+    100% {
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+
+   
